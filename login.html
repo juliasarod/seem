@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="login">
+        <h2>Login</h2>
+        <form class="loginform" action="catalogo.html" method="GET">
+            <label for="user" class="login">Nome de usuário
+                <input type="text" id="user" name="user" required>
+            </label>
+
+            <label for="email" class="login">Email
+                <input type="email" id="email" name="email" required>
+            </label>
+            <p>
+                <a style="cursor: pointer;" onclick="preencherEmail()">@gmail.com</a>
+                <a style="cursor: pointer;" onclick="preencherYahoo()">@yahoo.com</a>
+                <a style="cursor: pointer;" onclick="preencherHotmail()">@hotmail.com</a>
+            </p>
+
+            <label for="senha" class="login">Senha
+                <input type="password" id="senha" name="senha" required>
+            </label>
+            <button type="submit" class="button">Entrar</button>
+
+        </form>
+        <p class="link">Não tem uma conta?<a href="cadastro.html" id="linkcad"> Cadastre-se</a></p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 SEEM. Todos os direitos reservados.</p>
+        <p><a href="inicio.html">Política de Privacidade</a> | <a href="inicio.html">Termos de Uso</a> <a
+                href="inicio.html">Entre em Contato</a> | <a href="inicio.html">Perguntas Frequentes</a></p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

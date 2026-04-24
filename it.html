@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veja IT: Bem-vindos a Derry no SEEM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="paginaInfoFilme">
+        <div class="infoTrailer">
+            <div class="infoFilmeSinopse">
+                <div class="infoFilme">
+                    <h1>IT: Bem-vindos a Derry</h1>
+                    <div class="infoDetalhes">
+                        <p id="nota">100%</p>
+                        <p id="ano">2017</p>
+                        <p id="duracao">1 Temporada</p>
+                        <img id="classificacao" width="25" height="25" alt="Classificação Indicativa 16 anos"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Classifica%C3%A7%C3%A3o_Indicativa_16_anos.svg/500px-Classifica%C3%A7%C3%A3o_Indicativa_16_anos.svg.png">
+                    </div>
+
+                    <div class="sinopseFilme">
+                        <p id="elenco">Elenco: Bill Skarsgård, Taylour Paige, Jovan Adepo </p>
+                        <p id="sinopse">Em uma pequena cidade, um grupo de crianças enfrenta seus maiores medos quando
+                            se
+                            deparam com uma
+                            entidade maligna que assume a forma de um palhaço chamado Pennywise. Enquanto tentam
+                            desvendar
+                            os
+                            mistérios por trás dos desaparecimentos, eles descobrem que o mal está mais próximo do que
+                            imaginavam.
+                        </p>
+                        <div class="botoesInfo">
+                            <button class="btn-assinar">Assistir</button>
+                            <button class="btn-assinar" onclick="carregarEps()">Episódios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trailerFilme" id="videoContainer" onclick="carregarVideo()">
+                <img src="\img\catalogo\wtdhorizontal.jpg" class="capa-video" alt="Trailer de It">
+
+                <div class="botao-play">
+                    <div class="triangulo"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="epsFilme" id="epsContainer" onclick="carregarEps()">
+        </div>
+
+        <div class="recomendados">
+            <h2>Você também pode gostar</h2>
+            <div class="slideRecomendados">
+                <div class="card-filmeRecomendado">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/original/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg" alt="IT: A coisa"
+                            class="catalogofilme">
+                        <div class="info-card">
+                            <p class="titulo">IT: A coisa</p>
+                            <p class="ano-classificacao">2017 | 16+</p>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-filmeRecomendado">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/original/skO9fdw6bKrAbZUsHBhtgn6VTEI.jpg"
+                            alt="IT: Capítulo 2" class="catalogofilme">
+                        <div class="info-card">
+                            <p class="titulo">It: Capítulo 2</p>
+                            <p class="ano-classificacao">2019 | 16+</p>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-filmeRecomendado">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/original/cenkE91gBWfsKjU7AtKeLDoan6S.jpg"
+                            alt="IT: Uma Obra-Prima do Medo" class="catalogofilme">
+                        <div class="info-card">
+                            <p class="titulo">IT: Uma Obra-Prima do Medo</p>
+                            <p class="ano-classificacao">1990 | 16+</p>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-filmeRecomendado">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/original/nRXzwckAK3GqMfgbl2h0uWN6Id0.jpg" alt="Os Órfãos"
+                            class="catalogofilme">
+                        <div class="info-card">
+                            <p class="titulo">Os Órfãos</p>
+                            <p class="ano-classificacao">2019 | 16+</p>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-filmeRecomendado">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/original/yQu2pNkGSROjaMHnhOy1dcMndUp.jpg"
+                            alt="American Horror Story" class="catalogofilme">
+                        <div class="info-card">
+                            <p class="titulo">American Horror Story</p>
+                            <p class="ano-classificacao">2011 | 16+</p>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-filmeRecomendado">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/original/sdCJbGkvnIsIKLxaFQrviriODVq.jpg" alt="Chucky"
+                            class="catalogofilme">
+                        <div class="info-card">
+                            <p class="titulo">Chucky</p>
+                            <p class="ano-classificacao">2021 | 16+</p>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-filmeRecomendado">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/original/twfKp60THrcOIep9sjHODOOfO8d.jpg"
+                            alt="Stranger Things" class="catalogofilme">
+                        <div class="info-card">
+                            <p class="titulo">Stranger Things</p>
+                            <p class="ano-classificacao">2016 | 16+</p>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-filmeRecomendado">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/original/nJP8gvggVZNQhggPJ14tze8ttbp.jpg"
+                            alt="I Am Not Okay With This" class="catalogofilme">
+                        <div class="info-card">
+                            <p class="titulo">I Am Not Okay With This</p>
+                            <p class="ano-classificacao">2020 | 16+</p>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-filmeRecomendado">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/original/6PQqC4SbY910VvyVad6mvsboILU.jpg" alt="Terrifier"
+                            class="catalogofilme">
+                        <div class="info-card">
+                            <p class="titulo">Terrifier</p>
+                            <p class="ano-classificacao">2017 | 18+</p>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-filmeRecomendado">
+                    <a href="#">
+                        <img src="https://image.tmdb.org/t/p/original/5qGIxdEO841C0tdY8vOdLoRVrr0.jpg" alt="Nosferatu"
+                            class="catalogofilme">
+                        <div class="info-card">
+                            <p class="titulo">Nosferatu</p>
+                            <p class="ano-classificacao">2024 | 16+</p>
+                            <button class="btn-detalhes">Ver mais</button>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+            <footer class="footer">
+        <p>© 2026 SEEM. Todos os direitos reservados.</p>
+        <p><a href="inicio.html">Política de Privacidade</a> | <a href="inicio.html">Termos de Uso</a> <a
+                href="inicio.html">Entre em Contato</a> | <a href="inicio.html">Perguntas Frequentes</a></p>
+    </footer>
+
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

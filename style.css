@@ -1,0 +1,752 @@
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #20182F;
+    background: linear-gradient(90deg, rgba(32, 24, 47, 1) 0%, rgba(87, 63, 121, 1) 50%, rgba(32, 24, 47, 1) 100%);
+    width: 100%;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 10px 40px;
+}
+
+.navbar #logoml {
+    width: 57px;
+    height: 57px;
+    position: relative;
+    top: -12px;
+}
+
+.content {
+    text-align: center;
+    margin: 130px 50px 110px 50px
+}
+
+.content p {
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.content-title {
+    color: white;
+    font-size: 60px;
+    margin: 50px 75px 20px 75px;
+}
+
+.content a {
+    margin-top: 30px;
+
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: white;
+    color: #000000;
+}
+
+.trendingIndex {
+    margin: 50px 0px 0px 0px;
+    overflow: visible;
+}
+
+.trendingIndex h2 {
+    color: white;
+    font-size: 25px;
+    margin-left: 60px;
+}
+
+.slideTrendingIndex {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 40px 60px;
+    margin: -40px 0;
+
+}
+
+.slideTrendingIndex::-webkit-scrollbar {
+    display: none;
+}
+
+.trendingIndexFilmes {
+    display: flex;
+    gap: 10px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.trendingIndexfilme {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 300px;
+    margin: 0px 5px 0px 5px;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.card-filmeIndex {
+    position: relative;
+    min-width: 200px;
+    height: 300px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.card-filmeIndex:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.card-filmeIndex:hover .info-card {
+    opacity: 1;
+}
+
+.planos {
+    justify-content: space-evenly;
+    margin: 0 50px 200px 50px;
+    overflow: visible;
+}
+
+.planos h2 {
+    color: white;
+    margin: 60px 0px 30px 50px;
+    font-size: 30px;
+}
+
+.planoscontainer {
+    display: flex;
+    gap: 40px;
+    height: 300px;
+    margin: 0 50px 50px 50px;
+    text-align: center;
+}
+
+.plano {
+    margin: 0px 5px 0px 5px;
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.plano h3 {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0px 20px 0px;
+
+}
+
+.plano p {
+    color: white;
+    font-size: 16px;
+    margin: 10px 20px 10px 22px;
+}
+
+.plano a {
+    margin-top: 20px;
+}
+
+.plano:hover {
+    transform: scale(1.15);
+    z-index: 10;
+    transition: transform 0.3s ease;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: -5px;
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.cad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10px;
+    padding: 0px;
+    color: white;
+}
+
+.cad h2 {
+    font-size: 30px;
+    margin: 20px 0px 15px 0px;
+}
+
+.cad form {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+}
+
+.cadform p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.cad label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 4px;
+}
+
+.cadform input {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+.cadform button {
+    width: 20%;
+    align-self: center;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cadform button:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+#linkcad {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cad .link,
+.login .link{
+    margin-bottom: 50px;
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10px;
+    padding: 0px;
+    color: white;
+}
+
+.login h2 {
+    font-size: 30px;
+    margin: 20px 0px 20px 0px;
+}
+
+.login form {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+}
+
+.loginform p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.login label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 4px;
+}
+
+.loginform input {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+.loginform button {
+    margin-top: 20px;
+    width: 20%;
+    align-self: center;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.loginform button:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+#linklogin {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.formPesquisar {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 50px;
+}
+
+.formPesquisar input {
+    border: none;
+    border-radius: 6px 0 0 6px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.formPesquisar button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 0 6px 6px 0;
+}
+
+.formPesquisar button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.saudacoes h1,
+.resultadosSaudacao h1 {
+    color: white;
+    font-size: 35px;
+    margin: 50px 0px 10px 50px;
+
+}
+
+.saudacoes p,
+.resultadosSaudacao p {
+    color: white;
+    font-size: 21px;
+    margin: 0px 0px 50px 50px;
+}
+
+.catalogoGenero,
+.catalogoPesquisa {
+    margin: 10px;
+    overflow: visible;
+}
+
+.catalogoGenero h2,
+.catalogoPesquisa h2 {
+    color: white;
+    font-size: 25px;
+    margin: 50px 0px 0px 50px;
+}
+
+.slideCatalogoGenero,
+.slideCatalogoPesquisa {
+    display: flex;
+    gap: 20px;
+    padding: 40px 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 60px 60px;
+    margin: -40px 0;
+}
+
+.slideCatalogoGenero::-webkit-scrollbar,
+.slideCatalogoPesquisa::-webkit-scrollbar {
+    display: none;
+}
+
+.card-filme {
+    position: relative;
+    min-width: 200px;
+    height: 300px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.catalogofilme {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.card-filme:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.info-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    font-family: sans-serif;
+}
+
+.card-filme:hover .info-card {
+    opacity: 1;
+}
+
+.info-card .titulo {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.info-card .ano-classificacao {
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.btn-detalhes {
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#slideCatalogoGenero {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.paginaInfoFilme {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0 -35px -10px -10px;
+}
+
+
+.infoTrailer {
+    display: flex;
+    flex-direction: row;
+    margin: -10px 0px 0 -10px;
+}
+
+.infoTrailer .infoFilme h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0px -10px 10px 0px;
+    margin-top: 30px;
+    margin-bottom: auto;
+}
+
+
+.infoDetalhes {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    color: white;
+    font-size: 18px;
+    margin: 0px 10px 0px -28px;
+}
+
+.infoDetalhes #ano {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.07);
+    padding: 4px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.infoDetalhes #classificacao {
+    margin-top: 21px;
+}
+
+.infoDetalhes #nota {
+    color: rgba(0, 255, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.07);
+    padding: 4px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.infoDetalhes #duracao {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.07);
+    padding: 4px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.infoFilmeSinopse {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 50px;
+    margin: 0px 10px 0px 90px;
+}
+
+.sinopseFilme {
+    width: 420px;
+}
+
+.sinopseFilme #elenco {
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.sinopseFilme #sinopse {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+
+}
+
+.botoesInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.botoesInfo button {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 250px;
+    cursor: pointer;
+    font-weight: 500;
+    gap: 3px;
+}
+
+.botoesInfo button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(255, 255, 255);
+}
+
+
+.trailerFilme {
+    position: relative;
+    width: 100%;
+    max-width: 1050px;
+    cursor: pointer;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    margin-left: auto;
+    margin-right: -35px;
+    margin-top: -10px;
+    border-radius: 20px;
+}
+
+.capa-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+
+.botao-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(167, 167, 167, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid white;
+    margin-left: 5px;
+}
+
+
+.recomendados,
+.epsFilme,
+.catalogoPesquisa {
+    margin: 50px -35px 0px 0px;
+    overflow: visible;
+}
+
+.recomendados h2 {
+    color: white;
+    font-size: 30px;
+    margin: 0px 0px -20px 50px;
+    padding-top: 10px;
+}
+
+.epsFilme select {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 18px;
+    width: 170px;
+    margin: 20px 0px 0px 50px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.slideRecomendados,
+.slideEpisodios,
+.slideCatalogoPesquisa {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 60px 60px;
+    margin-right: 60px;
+    margin-left: -10px;
+}
+
+.slideEpisodios {
+    margin-top: -40px;
+}
+
+.slideRecomendados::-webkit-scrollbar,
+.slideEpisodios::-webkit-scrollbar,
+.slideCatalogoPesquisa::-webkit-scrollbar {
+    display: none;
+}
+
+.card-filmeRecomendado,
+.card-filmeEpisodios,
+.card-filmeCatalogoPesquisa {
+    position: relative;
+    min-width: 200px;
+    height: 300px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.filmeRecomendado,
+.filmeEpisodios {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.card-filmeRecomendado:hover,
+.card-filmeEpisodios:hover,
+.card-filmeCatalogoPesquisa:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.recomendados .info-card,
+.epsFilme .info-card
+.catalogoPesquisa .info-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.epsFilme .info-card {
+    opacity: 1;
+}
+
+.recomendados .card-filmeRecomendado:hover .info-card,
+.epsFilme .card-filmeEpisodios:hover .info-card,
+.catalogoPesquisa .card-filmeCatalogoPesquisa:hover .info-card{
+    opacity: 1;
+}
+
+.resultadosSaudacao p{
+    margin-bottom:-75px;
+
+}
