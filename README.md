@@ -1,6 +1,7 @@
 # Seem
 
 Seem é uma plataforma de streaming fictícia desenvolvida como projeto front-end
+
 Link do projeto: [https://juliasarod.github.io/seem/](https://juliasarod.github.io/seem/)
 
 ## Páginas
