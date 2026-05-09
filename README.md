@@ -2,6 +2,8 @@
 
 Seem é uma plataforma de streaming fictícia desenvolvida como projeto front-end
 
+Link do projeto: [https://juliasarod.github.io/seem/](https://juliasarod.github.io/seem/)
+
 ## Páginas
 
 - Landing Page — apresentação da plataforma
@@ -18,10 +20,14 @@ Seem é uma plataforma de streaming fictícia desenvolvida como projeto front-en
 
 ## Como visualizar
 
+Você pode acessar o projeto diretamente pelo navegador através do link:
+👉 [**Acessar plataforma Seem**](https://juliasarod.github.io/seem/)
+
+Caso queira rodar localmente:
 1. Clone o repositório
 ```bash
 git clone https://github.com/juliasarod/seem.git
 ```
-2. Abra o arquivo `inicio.html` no navegador
+2. Abra o arquivo `index.html` no navegador
 
 Feito por Julia Santos — [GitHub](https://github.com/juliasarod)
