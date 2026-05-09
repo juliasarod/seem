@@ -64,8 +64,15 @@ document.addEventListener("DOMContentLoaded", function () {
         if (termo === "it") {
             window.location.href = "resultados.html";
         }
+        else{
+            alert("Esse campo é apenas um exemplo e não tem funcionalidade real ainda. Se quiser ver a simulação, tente pesquisar por 'It' para ver os resultados.");
+        }
     });
 });
+
+function clicarFilmeInd(){
+    alert("Esse conteúdo é apenas um exemplo e não tem funcionalidade real. Se quiser ver mais detalhes de uma obra, clique em 'It: Bem Vindos a Derry'.");
+}
 
 function carregarVideo() {
     const container = document.getElementById("videoContainer");
